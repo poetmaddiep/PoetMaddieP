@@ -11,6 +11,24 @@ h1, h2, h3, h4 {
   font-family: 'Dancing Script', cursive;
   margin: 0;
 }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: "Garamond", serif;
+    color: #F4F4F4;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #A2E1E0;
 .topnav {
     display: flex;
     justify-content: space-between;
@@ -20,17 +38,6 @@ h1, h2, h3, h4 {
     flex-wrap: wrap;
 }
 
-/* Navigation Bar Hover Effect */
-.topnav:hover {
-  background-color: #ffffff;
-  color: #004d4d;
-}
-
-/* Active Link */
-.topnav .active {
-  background-color: #4d0000; /* Dark red for the active page */
-  color: #ffffff;
-}
 
 /* Parallax Scrolling Backgrounds */
 <style>
@@ -70,56 +77,36 @@ h1, h2, h3, h4 {
 }
 
 /* Contact Section */
-#contact-me {
-  padding: 50px 20px;
-  background: linear-gradient(to bottom, #004d4d, #4d0000); /* Gradient transition */
-  text-align: center;
-  margin-top: 80px; /* Space below the fixed navbar */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #092A29;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#contact-me h2 {
-  font-size: 30px;
-  color: #ffffff;
-  margin-bottom: 20px;
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
 }
 
-form {
-  max-width: 600px;
-  margin: 0 auto;
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
-form label {
-  display: block;
-  text-align: left;
-  margin-bottom: 5px;
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-family: "Garamond", serif;
+    margin-bottom: 0.5rem;
 }
 
-form input, form textarea, form button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 5px;
-}
-
-form input, form textarea {
-  background-color: #ffffff;
-  color: #4d0000;
-  font-size: 16px;
-}
-
-form button {
-  background-color: #004d4d;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #ffffff;
-  color: #004d4d;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+.contact-form button {
+    width: 100%;
 }
 
 /* Footer */
