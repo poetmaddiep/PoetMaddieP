@@ -8,7 +8,14 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1, h2{
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+
+ h3 {
       font-family: 'Dancing Script', cursive;
     color: #500000;
     margin-bottom: 1rem;
@@ -62,13 +69,13 @@ p {
 }
 
 .section.home {
-    background: linear-gradient(to right, #500000, #8b0000);
+    background: linear-gradient(to right, #4d0019, #8b0000);
     color: #fff;
     padding: 6rem 2rem;
 }
 
 .section.about {
-    background-color: #ffcccb;
+    background-color: #8b0000;
     color: #2c2c2c;
 }
 
