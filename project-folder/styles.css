@@ -11,33 +11,17 @@ h1, h2, h3, h4 {
   font-family: 'Dancing Script', cursive;
   margin: 0;
 }
-
-/* Navigation Bar */
 .topnav {
-  display: flex;
-  justify-content: center;
-  background-color: #004d4d; /* Teal from your palette */
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000; /* Keep navbar on top */
-  padding: 10px 0;
-}
-
-.topnav a {
-  display: inline-block;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 14px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color:#4d0000;
+    flex-wrap: wrap;
 }
 
 /* Navigation Bar Hover Effect */
-.topnav a:hover {
+.topnav:hover {
   background-color: #ffffff;
   color: #004d4d;
 }
@@ -49,26 +33,26 @@ h1, h2, h3, h4 {
 }
 
 /* Parallax Scrolling Backgrounds */
-.bg-image {
-  height: 100vh; /* Full screen height */
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("project-folder/images/Meta4.jpg");
+
+/* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-size: cover;
   background-position: center;
-  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
 }
 
-/* Specify correct image paths (make sure the folder names and extensions are correct) */
-.bg-image.img1 {
-  background-image: url('project-folder/images/HYPL1jpg'); /* Example image path */
-}
-
-.bg-image.img2 {
-  background-image: url('project-folder/images/Meta4.jpg'); /* Example image path */
-}
-
-.bg-image.img3 {
-  background-image: url('project-folder/images/Meta4-1.jpg'); /* Example image path */
-}
 
 /* Text on Parallax */
 .bg-text {
@@ -150,22 +134,8 @@ footer {
   width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .topnav a {
-    font-size: 16px;
-    padding: 10px;
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
   }
-
-  .bg-text {
-    font-size: 30px;
-  }
-
-  #contact-me {
-    padding: 30px 10px;
-  }
-
-  form input, form textarea, form button {
-    font-size: 14px;
-  }
-}
