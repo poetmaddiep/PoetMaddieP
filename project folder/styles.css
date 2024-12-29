@@ -54,16 +54,17 @@ h1, h2, h3, h4 {
   background-position: center;
 }
 
+/* Individual background images with specific file paths */
 .img1 {
-  background-image: url('HYPL1jpg'); /* Replace with the actual image path */
+  background-image: url('images/HYPL1jpg'); /* Path to the first image */
 }
 
 .img2 {
-  background-image: url('Meta4.jpg'); /* Replace with the actual image path */
+  background-image: url('images/Meta4.jpg'); /* Path to the second image */
 }
 
 .img3 {
-  background-image: url('Meta4-1.jpg'); /* Replace with the actual image path */
+  background-image: url('images/Meta4-1.jpg'); /* Path to the third image */
 }
 
 .bg-text {
