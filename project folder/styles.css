@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Garamond', serif;
+  color: #ffffff;
+  background-color: #4d0000; /* Deep red background for contrast */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+}
+
+/* Navigation Bar */
+.topnav {
+  display: flex;
+  justify-content: center;
+  background-color: #004d4d; /* Teal from your palette */
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.topnav a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: #004d4d;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.topnav .active {
+  background-color: #4d0000; /* Dark red for the active page */
+  color: #ffffff;
+}
+
+/* Parallax Scrolling Backgrounds */
+.bg-image {
+  height: 100vh; /* Full screen height */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.img1 {
+  background-image: url('HYPL1jpg'); /* Replace with the actual image path */
+}
+
+.img2 {
+  background-image: url('Meta4.jpg'); /* Replace with the actual image path */
+}
+
+.img3 {
+  background-image: url('Meta4-1.jpg'); /* Replace with the actual image path */
+}
+
+.bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  background: rgba(0, 0, 0, 0.5); /* Transparent black background for contrast */
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Contact Section */
+#contact-me {
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #004d4d, #4d0000); /* Gradient transition */
+  text-align: center;
+}
+
+#contact-me h2 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input, form textarea {
+  background-color: #ffffff;
+  color: #4d0000;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #004d4d;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ffffff;
+  color: #004d4d;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #4d0000;
+  padding: 20px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .topnav a {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .bg-text {
+    font-size: 30px;
+  }
+
+  #contact-me {
+    padding: 30px 10px;
+  }
+
+  form input, form textarea, form button {
+    font-size: 14px;
+  }
+}
