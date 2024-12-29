@@ -1,15 +1,38 @@
 /* General Styles */
 body {
-  margin: 0;
-  font-family: 'Garamond', serif;
-  color: #ffffff;
-  background-color: #4d0000; /* Deep red background for contrast */
-  line-height: 1.6;
+    font-family: 'Garamond', serif;
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+    background-color: #f9f6f1;
+    line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Dancing Script', cursive;
-  margin: 0;
+h1, h2, h3 {
+      font-family: 'Dancing Script', cursive;
+    color: #500000;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0 0 1rem;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #500000;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .nav-links {
@@ -22,107 +45,124 @@ h1, h2, h3, h4 {
 
 .nav-links a {
     text-decoration: none;
-    font-family: "Garamond", serif;
-    color: #F4F4F4;
-    transition: color 0.3s ease;
+    color: #fff;
+    font-family: 'Garamond', serif;
+    font-size: 1rem;
 }
 
 .nav-links a:hover {
-    color: #A2E1E0;
-.topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color:#4d0000;
-    flex-wrap: wrap;
+    color: #ffcccb;
 }
 
-
-/* Parallax Scrolling Backgrounds */
-<style>
-.parallax {
-  /* The image used */
-  background-image: url("project-folder/images/Meta4.jpg");
-
-/* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
-
-<!-- Container element -->
-<div class="parallax"></div>
+.dropdown {
+    position: relative;
 }
 
-
-/* Text on Parallax */
-.bg-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  text-align: center;
-  font-family: 'Dancing Script', cursive;
-  background: rgba(0, 0, 0, 0.5); /* Transparent black background for contrast */
-  color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f6f1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
 }
 
-/* Contact Section */
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #092A29;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.contact-form .form-group {
-    margin-bottom: 1.5rem;
-}
-
-.contact-form label {
-    font-weight: bold;
+.dropdown-content a {
+    text-decoration: none;
     display: block;
-    margin-bottom: 0.5rem;
+    color: #500000;
+    padding: 0.5rem 1rem;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: none;
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Section Styling */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section.home {
+    background: linear-gradient(to right, #500000, #8b0000);
+    color: #fff;
+    padding: 6rem 2rem;
+}
+
+.section.about {
+    background-color: #ffcccb;
+    color: #2c2c2c;
+}
+
+.section.performances {
+    background-color: #fff;
+}
+
+.section.contact {
+    background-color: #500000;
+    color: #fff;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #ffcccb;
+    color: #500000;
+    font-family: 'Garamond', serif;
+    font-size: 1rem;
+    text-decoration: none;
     border-radius: 5px;
-    font-family: "Garamond", serif;
-    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease;
 }
 
-.contact-form button {
+.cta-button:hover {
+    background-color: #fff;
+    color: #500000;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+}
+
+input, textarea, button {
+    display: block;
     width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Garamond', serif;
+}
+
+button {
+    background-color: #500000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b0000;
 }
 
 /* Footer */
-footer {
-  text-align: center;
-  background-color: #4d0000;
-  padding: 20px;
-  font-size: 14px;
-  color: #ffffff;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #500000;
+    color: #fff;
+    font-family: 'Garamond', serif;
+    font-size: 0.9rem;
 }
 
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
