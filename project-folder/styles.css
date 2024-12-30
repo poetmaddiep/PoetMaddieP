@@ -8,16 +8,9 @@ body {
     line-height: 1.6;
 }
 
-h1, h2{
+h1, h2, h3{
     font-family: 'Dancing Script', cursive;
     color: #fff;
-    margin-bottom: 1rem;
-}
-
-
- h3 {
-      font-family: 'Dancing Script', cursive;
-    color: #500000;
     margin-bottom: 1rem;
 }
 
@@ -69,13 +62,13 @@ p {
 }
 
 .section.home {
-    background: linear-gradient(to right, #4d0019, #8b0000);
+    background: linear-gradient(135deg, #003366, #166483;
     color: #fff;
     padding: 6rem 2rem;
 }
 
 .section.about {
-    background-color: #660022;
+    background-color: #660022
     color: #fff;
 }
 
@@ -85,7 +78,7 @@ p {
 }
 
 .section.contact {
-   background: linear-gradient(to left, #4d0019, #8b0000);
+   background: linear-gradient(135deg, #003366, #166483);
     color: #fff;
 }
 
@@ -145,7 +138,7 @@ button:hover {
 .footer {
     text-align: center;
     padding: 1rem;
-    background-color: #500000;
+    background-color: #003366;
     color: #fff;
     font-family: 'Garamond', serif;
     font-size: 0.9rem;
