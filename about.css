@@ -147,6 +147,9 @@ p {
   from {opacity: .4}
   to {opacity: 1}
 }
+.section {
+    padding: 2rem 1rem; /* Reduced padding */
+}
 .section.career {
     text-align: right;
     background-color: #fff;
