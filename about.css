@@ -153,23 +153,19 @@ p {
 .section.career {
     text-align: right;
     background-color: #fff;
-    padding: 4rem 2rem;
 }
 
 .section.inspiration {
     text-align: left;
     background-color: #fff;
-    padding: 4rem 2rem;
 }
 
 .section.accomplishments {
-    text-align: right;
+    text-align: right !important;
     background-color: #fff;
-    padding: 4rem 2rem;
 }
 
 .section.goals {
-    text-align: left;
+    text-align: left !important;
     background-color: #fff;
-    padding: 4rem 2rem;
 }
