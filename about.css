@@ -147,36 +147,26 @@ p {
   from {opacity: .4}
   to {opacity: 1}
 }
-/* Section Styling */
-
-/* Section Styling */
-#career {
+.section.career {
     text-align: right;
     background-color: #fff;
     padding: 4rem 2rem;
 }
 
-#inspiration {
+.section.inspiration {
     text-align: left;
     background-color: #fff;
     padding: 4rem 2rem;
 }
 
-#accomplishments {
+.section.accomplishments {
     text-align: right;
     background-color: #fff;
     padding: 4rem 2rem;
 }
 
-#goals {
+.section.goals {
     text-align: left;
     background-color: #fff;
     padding: 4rem 2rem;
 }
-
-#gallery {
-    text-align: center;
-    background-color: #fff;
-    padding: 4rem 2rem;
-}
-
