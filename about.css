@@ -10,6 +10,7 @@ body {
 
 h1
 { font-family: 'Dancing Script', cursive;
+    text-align: center;
     color: #fff
     margin-bottom: 1rem;
 }
@@ -148,33 +149,34 @@ p {
 }
 /* Section Styling */
 
-.section.career {
+/* Section Styling */
+#career {
     text-align: right;
     background-color: #fff;
-     padding: 4rem 2rem;
-
+    padding: 4rem 2rem;
 }
 
-.section.inspiration {
+#inspiration {
     text-align: left;
     background-color: #fff;
-     padding: 4rem 2rem;
-}
-.section.accomplishments{
-   text-align: right;
-    background-color: #fff;
-     padding: 4rem 2rem;
-
-}
-.section.goals {
-   text-align: left;
-    background-color: #fff;
-     padding: 4rem 2rem;
+    padding: 4rem 2rem;
 }
 
-.section.gallery {
-     text-align: center;
+#accomplishments {
+    text-align: right;
     background-color: #fff;
-     padding: 4rem 2rem;
+    padding: 4rem 2rem;
+}
+
+#goals {
+    text-align: left;
+    background-color: #fff;
+    padding: 4rem 2rem;
+}
+
+#gallery {
+    text-align: center;
+    background-color: #fff;
+    padding: 4rem 2rem;
 }
 
