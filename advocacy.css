@@ -147,3 +147,12 @@ p {
   from {opacity: .4}
   to {opacity: 1}
 }
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #500000;
+    color: #fff;
+    font-family: 'Garamond', serif;
+    font-size: 0.9rem;
+}
