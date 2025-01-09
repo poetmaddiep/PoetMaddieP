@@ -147,3 +147,26 @@ p {
   from {opacity: .4}
   to {opacity: 1}
 }
+.section.career {
+    text-align: right;
+    background-color: #fff;
+    padding: 2rem 1rem;
+}
+
+.section.inspiration {
+    text-align: left;
+    background-color: #fff;
+    padding: 2rem 1rem;
+}
+
+.section.accomplishments {
+    text-align: right;
+    background-color: #fff;
+    padding: 2rem 1rem;
+}
+
+.section.goals {
+    text-align: left;
+    background-color: #fff;
+    padding: 2rem 1rem;
+}
