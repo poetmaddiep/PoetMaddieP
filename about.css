@@ -170,3 +170,12 @@ p {
     background-color: #fff;
     padding: 2rem 1rem;
 }
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #500000;
+    color: #fff;
+    font-family: 'Garamond', serif;
+    font-size: 0.9rem;
+}
