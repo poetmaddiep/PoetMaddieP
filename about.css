@@ -94,7 +94,7 @@ p {
   float: right;
   margin-left: 20px;
   margin-bottom: 20px;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
