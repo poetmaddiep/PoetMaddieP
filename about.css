@@ -90,15 +90,30 @@ p {
     padding: 2rem 1rem;
 }
 
-img {
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 20px;
+/* Accomplishment Section */
+.about-section {
+  padding: 20px; /* Optional: add some spacing inside the section */
+  background-color: #f8f8f8; /* Optional: set a background for this section */
+}
+
+.about-content {
+  display: flex; /* Activate Flexbox */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between the image and text */
+}
+
+.about-content img {
   max-width: 300px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.about-content p {
+  flex: 1; /* Allow the text to take up the remaining space */
+  line-height: 1.6; /* Improve readability with proper line height */
+}
+
 
 /* Footer */
 .footer {
