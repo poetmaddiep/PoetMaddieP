@@ -1,8 +1,8 @@
-    /* General Styles */
+/* General Styles */
 body {
     font-family: 'Garamond', serif;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
     color: #2c2c2c;
     background-color: #f9f6f1;
     line-height: 1.6;
@@ -10,8 +10,7 @@ body {
 
 h1
 { font-family: 'Dancing Script', cursive;
-    text-align: center;
-    color: #500000;
+    color: #fff
     margin-bottom: 1rem;
 }
 
@@ -24,10 +23,8 @@ h2, h3 {
 p {
     font-size: 1rem;
     margin: 0 0 1rem;
-    text-indent: 50px;
-    white-space: wrap;
 }
-}
+
 /* Navigation Bar */
 .navbar {
     display: flex;
@@ -62,8 +59,6 @@ p {
 .nav-links a:hover {
     color: #ffcccb;
 }
-
-* {box-sizing:border-box}
 
 
 .section.career {
