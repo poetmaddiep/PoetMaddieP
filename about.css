@@ -61,70 +61,32 @@ p {
 }
 
 
-.section.career {
-    text-align: right;
-    background-color: #fff;
-    padding: 2rem 1rem;
+/* Section Styling */
+.section.about {
+     background: linear-gradient(to right, #500000, #8b0000);
+     color: #fff;
+    padding: 4rem 2rem;
 }
 
-.section.inspiration {
-    text-align: left;
-    background-color: #fff;
-    padding: 2rem 1rem;
+
+.section.journey {
+   background-color: #fff;
+    Text-align: left; 
 }
 
-.section.accomplishments {
-    text-align: right;
+.section.inspo {
     background-color: #fff;
-    padding: 2rem 1rem;
+    text-align: right;
+}
+
+.section.accomplish {
+   background-color: #fff;
+    Text-align: left;
 }
 
 .section.goals {
-    text-align: left;
-    background-color: #fff;
-    padding: 2rem 1rem;
-}
-/* Journey Section */
-
-.about-journey {
-  display: flex; /* Activate Flexbox */
-  align-items: flex-start; /* Align items at the top */
-  gap: 20px; /* Space between the image and text */
-}
-
-.about-journey img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.about-journey p {
-  flex: 1; /* Allow the text to take up the remaining space */
-  line-height: 1.6; /* Improve readability with proper line height */
-}
-/* Accomplishment Section */
-.about-section {
-  padding: 20px; /* Optional: add some spacing inside the section */
-  background-color: #f8f8f8; /* Optional: set a background for this section */
-}
-
-.about-accomplishments {
-  display: flex; /* Activate Flexbox */
-  align-items: flex-start; /* Align items at the top */
-  gap: 20px; /* Space between the image and text */
-}
-
-.about-accomplishments img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.about-accomplishments p {
-  flex: 1; /* Allow the text to take up the remaining space */
-  line-height: 1.6; /* Improve readability with proper line height */
+     background-color: #fff;
+    text-align: right;
 }
 
 
