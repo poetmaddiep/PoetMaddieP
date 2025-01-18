@@ -53,25 +53,39 @@ font-family: 'Dancing Script', cursive;
 /* Hero Section */
 .hero-section {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('coffee.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  text-align: center;
+  height: 100vh; /* Full viewport height */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  display: flex; /* Aligns content */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  position: relative; /* Ensures the hero section respects z-index stacking */
+  text-align: center; /* Centers text inside the hero section */
+  overflow: hidden; /* Prevents content from spilling outside the hero section */
+  z-index: 1; /* Ensures proper stacking context */
+}
+
+.hero-section .overlay {
+  position: absolute; /* Allows positioning over the hero image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+  z-index: 2; /* Ensures the overlay is above the background image */
 }
 
 .hero-section .title {
   font-size: 3rem;
   font-family: 'Garamond', serif;
   color: #A79986;
+  z-index: 3; /* Ensures text is above the overlay */
 }
 
 .hero-section .subtitle {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  z-index: 3; /* Ensures text is above the overlay */
 }
 
 .hero-section .btn-primary {
