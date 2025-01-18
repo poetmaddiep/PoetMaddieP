@@ -104,7 +104,11 @@ header h1 {
 /* About Section */
 #about {
   text-align: center;
-  padding: 50px 20px;
+  padding: 30px 20px;
+  margin: 20px 0;
+  border: 1px solid #A79986;
+  border-radius: 5px;
+  background-color: #3E3D38;
 }
 
 #about p {
@@ -115,13 +119,13 @@ header h1 {
 /* Featured Video and Shows Section */
 #features {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px 20px;
 }
 
 .video {
   flex: 1;
+  max-width: 300px;
   margin: 10px;
   background-color: #1F1D20;
   border-radius: 5px;
@@ -148,7 +152,7 @@ header h1 {
 /* Footer */
 .footer {
   background-color: #602020;
-  padding: 20px 10px;
+  padding: 10px;
   color: #A79986;
 }
 
