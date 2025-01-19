@@ -77,14 +77,15 @@ header h1 {
 }
 
 .microphone {
-  position: relative;
-  width: 150px;
-  height: 300px;
-  margin: 20px auto 0;
-  background: url('microphone.png') no-repeat center;
-  background-size: contain;
+  display: flex; /* Center the image */
+  justify-content: center; /* Horizontally align in the center */
+  margin: 10px auto; /* Add space above and below */
 }
 
+.microphone img {
+  width: 150px; /* Ensure consistent width */
+  height: auto; /* Maintain aspect ratio */
+}
 
 /* About Section */
 #about {
