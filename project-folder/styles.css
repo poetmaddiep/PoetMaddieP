@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #602020;
+    background-color: #3D000E;
     padding: 1rem 2rem;
-    color: #A79986;
+    color: #F5F5F5;
 }
 
 .navbar .logo {
@@ -30,7 +30,7 @@
 }
 
 .nav-links a:hover {
-    color: #ffcccb;
+    color: #997B82;
 }
 
 
@@ -38,14 +38,14 @@
 body {
   margin: 0;
   font-family: Garamond, serif;
-  background-color: #1F1D20;
-  color: #A79986;
+  background-color: #3F242B;
+  color: #F5F5F5;
   line-height: 1.6;
 }
 
 h1, h2, h3 {
   font-family: 'Dancing Script', cursive;
-  color: #A79986;
+  color: #F5F5F5;
   margin: 0;
 }
 
@@ -85,21 +85,6 @@ header h1 {
   background-size: contain;
 }
 
-.cta-button {
-  margin-top: 20px;
-  padding: 10px 25px;
-  background-color: #803E2F;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background-color: #A79986;
-  color: #1F1D20;
-}
 
 /* About Section */
 #about {
@@ -151,9 +136,9 @@ header h1 {
 
 /* Footer */
 .footer {
-  background-color: #602020;
+  background-color: #3D000E;
   padding: 10px;
-  color: #A79986;
+  color: #F5F5F5;
 }
 
 .footer-container {
