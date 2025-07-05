@@ -1,119 +1,125 @@
-/* Base Styles */
+/* index.css */
+
 body {
   margin: 0;
-  font-family: Garamond, serif;
-  background-color: #ffffff;
-  color: #111;
+  font-family: 'Garamond', sans-serif;
+  background-color: #111;
+  color: #f4f4f4;
   line-height: 1.6;
 }
 
-/* Header */
-header {
-  background-color: #0f4d92; /* Yale Blue — change to #58111A for Wine Red */
-  color: #fff;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-title {
-  font-family: "Brush Script MT", cursive;
-  font-size: 2rem;
-  margin: 0;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list a {
-  color: #fff;
+a {
   text-decoration: none;
-  font-weight: bold;
+  color: inherit;
 }
 
-/* Main Content */
-main {
-  padding: 2rem;
+.hero {
+  background: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(17, 17, 17, 0.7);
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #800020; /* Oxblood red */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.cta-button {
+  background: #800020;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #a3212c;
+}
+
+.about,
+.video-feature,
+.services,
+.contact-cta {
+  padding: 4rem 2rem;
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
-h2, h3 {
-  font-family: Garamond, serif;
-  margin-top: 1.5rem;
+.about h2,
+.video-feature h2,
+.services h2,
+.contact-cta h2 {
+  font-size: 2rem;
+  color: #800020;
+  margin-bottom: 1rem;
 }
 
-.intro p {
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
-}
-
-.video-wrapper {
+.video-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
   background: #000;
-  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(128, 0, 32, 0.4);
 }
 
-.video-wrapper iframe {
+.video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
-blockquote {
-  font-style: italic;
-  margin: 1rem 0;
-  border-left: 4px solid #0f4d92;
-  padding-left: 1rem;
-  color: #333;
-}
-
-/* Signup Form */
-.signup form {
+.features {
   display: flex;
-  gap: 0.5rem;
-  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #1e1e1e;
 }
 
-.signup input[type="email"] {
-  padding: 0.5rem;
+.feature-box {
+  background: #2c2c2c;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(128, 0, 32, 0.3);
+  max-width: 300px;
   flex: 1;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
-.signup button {
-  padding: 0.5rem 1rem;
-  background-color: #0f4d92;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
+.feature-box h3 {
+  color: #800020;
+  margin-bottom: 1rem;
 }
 
-.signup button:hover {
-  background-color: #09376b;
-}
-
-/* Footer */
-footer {
+.footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #f5f5f5;
-  color: #555;
-  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #111;
+  color: #777;
   font-size: 0.9rem;
 }
