@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Garamond', sans-serif;
+  background-color: #111;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1606760227090-72fc6c6f6769?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(17, 17, 17, 0.75);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #800020;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #800020;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.workshop-card {
+  background: #2c2c2c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(128, 0, 32, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px rgba(128, 0, 32, 0.45);
+}
+
+.workshop-card h3 {
+  color: #ffcccc;
+}
+
+.workshop-card p {
+  margin: 0.5rem 0;
+  color: #ddd;
+}
+
+.testimonials {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+
+.testimonial-grid blockquote {
+  display: none;
+  font-style: italic;
+  padding: 1rem 2rem;
+  border-left: 4px solid #800020;
+  background-color: #222;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.testimonial-grid blockquote.active {
+  display: block;
+}
+
+.testimonial-grid cite {
+  display: block;
+  margin-top: 0.5rem;
+  color: #aaa;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #111;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
